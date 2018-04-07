@@ -1,0 +1,41 @@
+.container{
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+}
+.box{
+  width:100%;
+}
+.blue{
+  color:blue;
+}
+.green{
+  color:green;
+}
+.yellow{
+  color:yellow;
+}
+.red{
+  color:red;
+}
+@media only screen and (min-width:500px){
+  .blue{
+    width:50%;
+  }
+  #container2{
+    width:50%;
+  }
+}
+@media only screen and (min-width:600px){
+  .blue{
+    width:25%;
+    order:1;
+  }
+  #container2{
+    width:50%;
+  }
+  .red{
+    width:25%;
+    order:-1;
+  }
+}
